@@ -1,7 +1,6 @@
 import os
 
 from rdio import Rdio
-from rdio_consumer_credentials import *
 
 from flask import Flask
 from flask import request
