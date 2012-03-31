@@ -10,7 +10,9 @@ from flask import Markup
 
 app = Flask(__name__)
 
-rdio = Rdio((RDIO_CONSUMER_KEY, RDIO_CONSUMER_SECRET))
+key = os.environ['RDIO_CONSUMER_KEY']
+secret = os.environ['RDIO_CONSUMER_SECRET']
+rdio = Rdio(key, secret)
 
 @app.route('/')
 def home():
