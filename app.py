@@ -55,7 +55,7 @@ def search_rss(query, results):
 '''
     text = text + '<title>%s - Rdio Search Results</title>\n' % query
     text = text + '<description>%s - Rdio Search Results</description>\n' % query
-    text = text + '<ttl>10</ttl>\n'
+    text = text + '<ttl>1800</ttl>\n'
 
     for result in results:
         text = text + '<item>\n'
