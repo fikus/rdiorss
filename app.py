@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 key = os.environ['RDIO_CONSUMER_KEY']
 secret = os.environ['RDIO_CONSUMER_SECRET']
-rdio = Rdio(key, secret)
+rdio = Rdio((key, secret))
 
 @app.route('/')
 def home():
